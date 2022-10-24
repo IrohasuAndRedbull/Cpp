@@ -12,7 +12,7 @@ void plot(double y) {/*関数を用いてsin関数をプロットする*/
 }
 
 int main() {
-	double i = 0.0;1/*iの初期化*/
+	double i = 0.0;/*iの初期化*/
 
 	for (i=-M_PI; i<=M_PI; i=i+(M_PI/10) ){/*20回繰り返し処理がしたいので、π/10ずつ足していく*/
 		plot(sin(i));/*plot関数にsinを引数として実行する*/
