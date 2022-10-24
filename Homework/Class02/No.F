@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-double Sigma(int num); /*関数のプロトタイプ宣言*/
+double Sigma(int num); /*関数のプロトタイプ宣言、関数名をアッパーキャメルケースを用いる*/
 double x[1000]={}, w[1000]={};/*ベクトルx,wをグローバル変数として定義*/
 
 int main() {
 	int num = 0;
-	printf("Please input N :"); scanf_s("%d", &num);
+	printf("Please input N :"); scanf_s("%d", &num);/*scanfを用いてデータ数Nを入力する*/
 
 	if (num > 1000 && num < 0) {
 		printf("This number is out of range.\n");
@@ -14,24 +14,24 @@ int main() {
 
 	printf("N:%d\n\n", num);
 
-	int i = 0;
-	for (i = 0; i < num; i++) {
+	int i=0;
+	for (i=0; i<num; i++) {
 		printf("Please input a x[%d] :", i); scanf_s("%lf", &x[i]);
 	}
 	printf("-------------------------------------\n");
-	for (i = 0; i < num; i++) {
+	for (i=0; i<num; i++) {
 		printf("Please input a w[%d] :", i); scanf_s("%lf", &w[i]);
 	}/*数値入力部分*/
 	
-	printf("The result is %f\n", Sigma(num));
+	printf("The result is %f\n", Sigma(num));/*結果の出力*/
 
 	return 0;
 }
 
 double Sigma(int num) {
-	double sum = 0.0;
-	for (int i = 0; i < num; i++) {
-		sum += x[i] * w[i];
+	double sum=0.0;
+	for (int i=0; i<num; i++) {
+		sum += x[i]*w[i];
 	}
 	return sum;
-}
+}/*関数内で数値入力されたベクトルx,wをかけ、その総和を求める*/
