@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main() {
-	int i=0;
-	int* p;
-	void* v;
+	int i=0;/*int型の変数i*/
+	int* p;/*intへのポインタ型の変数p*/
+	void* v;/*voidへのポインタ型変数v*/
 
 	v = &i;
 	printf("%d\n", (int) v);/*iへのポインタをvに代入し，vの値を表示する*/
