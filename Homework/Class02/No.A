@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-void swap(int* num) {
-    *num = 0;
-}
+void swap(int* b) {
+    *b = 0;
+}/*ポインタ変数bを用いて間接的に配列aの値をすべて0に書き替える*/
 
 int main() {
-    int i = 0, a[5] = {};
+    int i = 0, a[5] = {};/*int型で要素数5の配列aに格納*/
     for (i = 0; i < 5; i++) {
         printf("Input a number for a[%d] : ", i); scanf_s("%d", &a[i]);
     }
