@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void) {
-	int i=0;
-	int *p;
+	int i=0;/*int型の変数i*/
+	int *p;/*intへのポインタ型の変数p*/
 	
 	p = &i;/*iへのポインタをpに代入*/
 
